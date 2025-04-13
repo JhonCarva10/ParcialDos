@@ -4,10 +4,14 @@ public class Arma {
     private int dañoAdicional;
 
     public void atacarConArma(Criatura objetivo){
-
+        objetivo.defender(dañoAdicional);
     }
 
     public int getDañoAdicional(){
-        return 0;
+        return dañoAdicional;
+    }
+
+    public String getNombre() {
+        return nombre;
     }
 }
